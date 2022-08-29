@@ -1,6 +1,7 @@
 package test2.view;
 
 import java.awt.BorderLayout;
+import java.awt.Font;
 import java.awt.GridLayout;
 
 import javax.swing.JButton;
@@ -28,14 +29,19 @@ public class CalculatorView extends JFrame {
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        Font font = new Font("Arial",Font.BOLD,40);
+
         JPanel jPanel_toPanel = new JPanel();
         jPanel_toPanel.setLayout(new GridLayout(3,2));
         JLabel jLabel_fsJLabel = new JLabel("First Value");
         JLabel jLabel_snJLabel = new JLabel("Second Value");
         JLabel jLabel_ansJLabel = new JLabel("Answer");
         jTextField_fsField = new JTextField();
+        jTextField_fsField.setFont(font);
          jTextField_snField = new JTextField();
+         jTextField_snField.setFont(font);
          jTextField_ansField = new JTextField();
+         jTextField_ansField.setFont(font);
 
         jPanel_toPanel.add(jLabel_fsJLabel);
         jPanel_toPanel.add(jTextField_fsField);

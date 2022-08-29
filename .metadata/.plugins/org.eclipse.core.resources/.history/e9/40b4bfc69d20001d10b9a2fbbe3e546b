@@ -1,0 +1,8 @@
+package IEmployee;
+
+public class Entry {
+public static void main(String[] args) {
+	IEmployee employee1 = new PartTimeEmployee("duc",4000,7);
+	
+}
+}

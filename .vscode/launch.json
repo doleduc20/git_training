@@ -1,0 +1,342 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "Abstract"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(1)",
+            "request": "launch",
+            "mainClass": "test.test",
+            "projectName": "MVC2"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(2)",
+            "request": "launch",
+            "mainClass": "test.test",
+            "projectName": "MVC4"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(3)",
+            "request": "launch",
+            "mainClass": "test.test",
+            "projectName": "MVC5"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(4)",
+            "request": "launch",
+            "mainClass": "test.test",
+            "projectName": "MVC"
+        },
+        {
+            "type": "java",
+            "name": "Launch For1",
+            "request": "launch",
+            "mainClass": "For1",
+            "projectName": "Test"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai1",
+            "request": "launch",
+            "mainClass": "bai1",
+            "projectName": "Test"
+        },
+        {
+            "type": "java",
+            "name": "Launch string",
+            "request": "launch",
+            "mainClass": "string",
+            "projectName": "Test"
+        },
+        {
+            "type": "java",
+            "name": "Launch while1",
+            "request": "launch",
+            "mainClass": "while1",
+            "projectName": "Test"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(5)",
+            "request": "launch",
+            "mainClass": "catchuoithanhmang.test",
+            "projectName": "catchuoithanhmang"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(6)",
+            "request": "launch",
+            "mainClass": "compareto.test",
+            "projectName": "compareto"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(7)",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "enum"
+        },
+        {
+            "type": "java",
+            "name": "Launch vidu",
+            "request": "launch",
+            "mainClass": "borderlayout.vidu",
+            "projectName": "flowlayout"
+        },
+        {
+            "type": "java",
+            "name": "Launch vidu(1)",
+            "request": "launch",
+            "mainClass": "flowlayout.vidu",
+            "projectName": "flowlayout"
+        },
+        {
+            "type": "java",
+            "name": "Launch vidu(2)",
+            "request": "launch",
+            "mainClass": "gridlayout.vidu",
+            "projectName": "flowlayout"
+        },
+        {
+            "type": "java",
+            "name": "Launch game1",
+            "request": "launch",
+            "mainClass": "gametaixiu.game1",
+            "projectName": "gametaixiu"
+        },
+        {
+            "type": "java",
+            "name": "Launch testbox",
+            "request": "launch",
+            "mainClass": "main.testbox",
+            "projectName": "generic"
+        },
+        {
+            "type": "java",
+            "name": "Launch testbox2",
+            "request": "launch",
+            "mainClass": "main.testbox2",
+            "projectName": "generic"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(8)",
+            "request": "launch",
+            "mainClass": "hamsosanh.test",
+            "projectName": "hamsosanh"
+        },
+        {
+            "type": "java",
+            "name": "Launch Entry",
+            "request": "launch",
+            "mainClass": "IEmployee.Entry",
+            "projectName": "interface2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Entry(1)",
+            "request": "launch",
+            "mainClass": "interface2.Entry",
+            "projectName": "interface2"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(9)",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "interface"
+        },
+        {
+            "type": "java",
+            "name": "Launch taocuaso",
+            "request": "launch",
+            "mainClass": "jframe.taocuaso",
+            "projectName": "jframe"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(10)",
+            "request": "launch",
+            "mainClass": "kethua.test",
+            "projectName": "kethua"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(11)",
+            "request": "launch",
+            "mainClass": "mang.test",
+            "projectName": "mang"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(12)",
+            "request": "launch",
+            "mainClass": "test.test",
+            "projectName": "mvc3"
+        },
+        {
+            "type": "java",
+            "name": "Launch myCalculator",
+            "request": "launch",
+            "mainClass": "my_calculator.myCalculator",
+            "projectName": "my_calculator"
+        },
+        {
+            "type": "java",
+            "name": "Launch date",
+            "request": "launch",
+            "mainClass": "opp.date",
+            "projectName": "opp"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(13)",
+            "request": "launch",
+            "mainClass": "overriding.test",
+            "projectName": "overriding"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(14)",
+            "request": "launch",
+            "mainClass": "phim.test",
+            "projectName": "phim"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(15)",
+            "request": "launch",
+            "mainClass": "test.test",
+            "projectName": "qldssv_Arraylist"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(16)",
+            "request": "launch",
+            "mainClass": "qlmt.test",
+            "projectName": "qlmt"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(17)",
+            "request": "launch",
+            "mainClass": "qlttsv.test",
+            "projectName": "qlttsv"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(18)",
+            "request": "launch",
+            "mainClass": "sach.test",
+            "projectName": "sach"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(19)",
+            "request": "launch",
+            "mainClass": "stack.test",
+            "projectName": "stack"
+        },
+        {
+            "type": "java",
+            "name": "Launch Entry(2)",
+            "request": "launch",
+            "mainClass": "Entry",
+            "projectName": "static"
+        },
+        {
+            "type": "java",
+            "name": "Launch taotaptin",
+            "request": "launch",
+            "mainClass": "main.taotaptin",
+            "projectName": "taotaptin"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai1(1)",
+            "request": "launch",
+            "mainClass": "test1.bai1",
+            "projectName": "test1"
+        },
+        {
+            "type": "java",
+            "name": "Launch test(20)",
+            "request": "launch",
+            "mainClass": "thoigian.test",
+            "projectName": "thoigian"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "vidu.Test",
+            "projectName": "thuvienham"
+        },
+        {
+            "type": "java",
+            "name": "Launch test2",
+            "request": "launch",
+            "mainClass": "vidu.test2",
+            "projectName": "thuvienham"
+        },
+        {
+            "type": "java",
+            "name": "Launch testobj",
+            "request": "launch",
+            "mainClass": "vidu.testobj",
+            "projectName": "thuvienham"
+        },
+        {
+            "type": "java",
+            "name": "Launch hd",
+            "request": "launch",
+            "mainClass": "tinhtiencafe.hd",
+            "projectName": "tinhtiencafe"
+        }
+    ]
+}

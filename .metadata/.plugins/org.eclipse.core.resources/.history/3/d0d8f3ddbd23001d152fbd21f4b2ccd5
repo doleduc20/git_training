@@ -1,0 +1,13 @@
+package test;
+
+import model.LastButtonModel;
+import view.LastButtonView;
+
+public class test {
+public static void main(String[] args) {
+//	new LastButtonView();
+	LastButtonModel lbm = new LastButtonModel();
+	lbm.num_1();
+	lbm.getValue();
+}
+}

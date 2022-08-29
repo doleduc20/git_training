@@ -1,0 +1,39 @@
+package view;
+
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import Model.MyColorModel;
+
+public class MyColorView extends JFrame {
+	private MyColorModel myColorModel;
+	private JLabel jLabel;
+	public MyColorView() {
+		this.myColorModel = new MyColorModel();
+		this.init();
+	}
+	private void init() {
+		this.setTitle("My Color");
+		this.setSize(800,600);
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		Font font_label = new Font("Arial", Font.BOLD, 30);
+		jLabel = new JLabel("TEXT");
+		jLabel.setFont(font_label);
+		
+		JButton jButton_redText = new JButton("Red Text");
+		JButton jButton_YellowText = new JButton("Yellow Text");
+		JButton jButton_GreenText = new JButton("Red Green");
+		
+		JButton jButton_redBackground = new JButton("Red BG");
+		JButton jButton_YellowBackground = new JButton("Yellow BG");
+		JButton jButton_GreenBackground = new JButton("Green BG");
+		
+		this.setVisible(true);
+		
+	}
+}

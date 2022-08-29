@@ -1,0 +1,10 @@
+package main;
+
+import java.io.File;
+
+public class taotaptin {
+	public static void main(String[] args) {
+		File thumuc1 = new File("D:\\java\\taotaptin\\test");
+		System.out.println("kiem tra tm1 ton tai hay k? "+thumuc1.exists());
+	}
+}

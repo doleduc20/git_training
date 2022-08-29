@@ -1,0 +1,17 @@
+package View;
+
+import javax.swing.JFrame;
+
+import Model.CounterModel;
+
+public class CounterView extends JFrame {
+	private CounterModel ctm;
+	public CounterView() {
+		this.ctm = new CounterModel();
+		this.init();
+		
+	}
+	public void init() {
+		
+	}
+}

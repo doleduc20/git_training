@@ -1,0 +1,10 @@
+package jframe;
+
+import javax.swing.JFrame;
+
+public class taocuaso extends JFrame {
+	public taocuaso() {
+		
+	}
+	
+}

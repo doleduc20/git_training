@@ -1,0 +1,5 @@
+package IEmployee;
+
+public interface IEmployee {
+
+}

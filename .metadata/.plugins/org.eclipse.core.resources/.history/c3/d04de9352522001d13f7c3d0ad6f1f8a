@@ -1,0 +1,36 @@
+package borderlayout;
+
+import java.awt.BorderLayout;
+import java.awt.Button;
+
+import javax.swing.JFrame;
+
+public class vidu extends JFrame {
+	public vidu() {
+		this.setTitle("chuong trinh c");
+		this.setSize(400, 600);
+		this.setLocationRelativeTo(null);
+		
+		BorderLayout bl1 = new BorderLayout();
+		this.setLayout(bl1);
+		
+		Button but1 = new Button();
+		Button but2 = new Button();
+		Button but3 = new Button();
+		Button but4 = new Button();
+		Button but5 = new Button();
+		
+		this.add(but1, BorderLayout.NORTH);
+		this.add(but2, BorderLayout.SOUTH);
+		this.add(but3, BorderLayout.WEST);
+		this.add(but4, BorderLayout.EAST);
+		this.add(but5, BorderLayout.CENTER);
+		
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setVisible(true);
+		
+	}
+	public static void main(String[] args) {
+		new vidu();
+	}
+}

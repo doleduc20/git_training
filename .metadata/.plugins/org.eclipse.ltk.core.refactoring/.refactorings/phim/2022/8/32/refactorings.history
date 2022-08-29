@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;phim.Hangsanxuat.quocGia&apos; in &apos;phim.Hangsanxuat&apos;&#x0D;&#x0A;- Original project: &apos;phim&apos;&#x0D;&#x0A;- Original element: &apos;phim.Hangsanxuat.quocGia&apos;&#x0D;&#x0A;- Getter method name: &apos;getQuocGia&apos;&#x0D;&#x0A;- Setter method name: &apos;setQuocGia&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;quocGia&apos;" flags="589830" getter="getQuocGia" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;phim{Hangsanxuat.java[Hangsanxuat^quocGia" insertion="0" setter="setQuocGia" stamp="1659715049579" version="1.0" visibility="1"/>
+</session>

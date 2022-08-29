@@ -1,0 +1,28 @@
+package view;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import model.LastButtonModel;
+
+public class LastButtonView extends JFrame {
+	private LastButtonModel lastButtonModel;
+	public LastButtonView() {
+		this.lastButtonModel = new LastButtonModel();
+		this.init();
+	}
+	private void init() {
+		this.setTitle("Last Button");
+		this.setSize(400,600);
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		JPanel jpanel_center = new JPanel();
+		jpanel_center.setLayout(new BorderLayout());
+		JButton jButton_1 = new JButton("1");
+		
+	}
+}

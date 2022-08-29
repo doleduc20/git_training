@@ -1,0 +1,13 @@
+package borderlayout;
+
+import javax.swing.JFrame;
+
+public class vidu extends JFrame {
+	public vidu() {
+		this.setTitle("chuong trinh c");
+		this.setSize(400, 600);
+		this.setLocationRelativeTo(null);
+		
+		
+	}
+}

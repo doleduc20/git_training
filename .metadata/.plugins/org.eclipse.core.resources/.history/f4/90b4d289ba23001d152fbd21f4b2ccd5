@@ -1,0 +1,9 @@
+package controller;
+
+import java.awt.event.ActionListener;
+
+import view.LastButtonView;
+
+public class LastButtonListener implements ActionListener {
+	private LastButtonView lastButtonView;
+}

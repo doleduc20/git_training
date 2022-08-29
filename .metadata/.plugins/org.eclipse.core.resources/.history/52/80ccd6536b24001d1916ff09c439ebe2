@@ -1,0 +1,10 @@
+package Controller;
+
+import view.MyColorView;
+
+public class MyColorListener {
+	private MyColorView myColorView;
+	public MyColorListener(MyColorView myColorView) {
+		this.myColorView = new MyColorView();
+	}
+}

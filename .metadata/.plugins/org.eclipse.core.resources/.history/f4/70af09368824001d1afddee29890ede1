@@ -1,0 +1,33 @@
+package View;
+
+import java.awt.HeadlessException;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import model.MiniCalculatorModel;
+
+public class MiniCalculatorView extends JFrame {
+	private MiniCalculatorModel miniCalculatorModel;
+
+	public MiniCalculatorView(MiniCalculatorModel miniCalculatorModel) throws HeadlessException {
+		
+		this.miniCalculatorModel = miniCalculatorModel;
+		this.init();
+	}
+
+	private void init() {
+		this.setTitle("Minicalculator");
+		this.setSize(600,400);
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		JLabel jLabel_first = new JLabel("First value");
+		JLabel jLabel_second = new JLabel("Second value");
+		
+		this.setVisible(true);
+		
+	}
+	
+	
+}

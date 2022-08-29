@@ -1,0 +1,10 @@
+package borderlayout;
+
+import javax.swing.JFrame;
+
+public class vidu extends JFrame {
+	public vidu() {
+		
+		
+	}
+}

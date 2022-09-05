@@ -1,7 +1,0 @@
-package Controller;
-
-import java.awt.event.ActionListener;
-
-public class CounterListener implements ActionListener {
-	
-}

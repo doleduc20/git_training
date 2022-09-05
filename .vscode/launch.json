@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch testcalculatort2",
+            "request": "launch",
+            "mainClass": "test2.tester.testcalculatort2",
+            "projectName": ""
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

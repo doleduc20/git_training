@@ -1,7 +1,0 @@
-package Controller;
-
-import View.MiniCalculatorView;
-
-public class MiniCalculatorController {
-	private MiniCalculatorView miniCalculatorView;
-}

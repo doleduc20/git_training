@@ -1,9 +1,0 @@
-package Model;
-
-public class CounterModel {
-	private int value;
-	
-	public CounterModel() {
-		this.value=0;
-	}
-}

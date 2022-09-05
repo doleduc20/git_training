@@ -8,11 +8,10 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
-
 import test2.controller.CalculatorListener;
 import test2.model.CalculatorModel;
-
 public class CalculatorView extends JFrame {
     private CalculatorModel calculatorModel;
     private JTextField jTextField_fsField;
@@ -21,7 +20,6 @@ public class CalculatorView extends JFrame {
     public CalculatorView(){
         this.calculatorModel = new CalculatorModel();
         this.init();
-
     }
     public void init(){
         this.setTitle("Calculator");
@@ -30,7 +28,7 @@ public class CalculatorView extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         Font font = new Font("Arial",Font.BOLD,40);
-
+     
         JPanel jPanel_toPanel = new JPanel();
         jPanel_toPanel.setLayout(new GridLayout(3,2));
         JLabel jLabel_fsJLabel = new JLabel("First Value");
@@ -49,7 +47,6 @@ public class CalculatorView extends JFrame {
         jPanel_toPanel.add(jTextField_snField);
         jPanel_toPanel.add(jLabel_ansJLabel);
         jPanel_toPanel.add(jTextField_ansField);
-
         CalculatorListener calculatorListener = new CalculatorListener(this);
         JPanel jPanel_footer = new JPanel();
         jPanel_footer.setLayout(new GridLayout(2,3));
@@ -65,16 +62,12 @@ public class CalculatorView extends JFrame {
         jbutton_square.addActionListener(calculatorListener);
         JButton jbutton_mod = new JButton("%");
         jbutton_mod.addActionListener(calculatorListener);
-
         jPanel_footer.add(jbutton_plus);
         jPanel_footer.add(jbutton_minus);
         jPanel_footer.add(jbutton_multiple);
         jPanel_footer.add(jbutton_devide);
         jPanel_footer.add(jbutton_square);
         jPanel_footer.add(jbutton_mod);
-
-
-
         this.setLayout(new BorderLayout());
         this.add(jPanel_toPanel,BorderLayout.CENTER);
         this.add(jPanel_footer,BorderLayout.SOUTH);
@@ -98,7 +91,6 @@ public class CalculatorView extends JFrame {
         jTextField_ansField.setText(this.calculatorModel.getAnswer()+"");
         
     }
-
     public void multiple(){
         double firstValue = Double.valueOf(jTextField_fsField.getText());
         double secondValue = Double.valueOf(jTextField_snField.getText());
@@ -108,7 +100,6 @@ public class CalculatorView extends JFrame {
         jTextField_ansField.setText(this.calculatorModel.getAnswer()+"");
         
     }
-
     public void devide(){
         double firstValue = Double.valueOf(jTextField_fsField.getText());
         double secondValue = Double.valueOf(jTextField_snField.getText());
@@ -118,7 +109,6 @@ public class CalculatorView extends JFrame {
         jTextField_ansField.setText(this.calculatorModel.getAnswer()+"");
         
     }
-
     public void square(){
         double firstValue = Double.valueOf(jTextField_fsField.getText());
         double secondValue = Double.valueOf(jTextField_snField.getText());
@@ -128,7 +118,6 @@ public class CalculatorView extends JFrame {
         jTextField_ansField.setText(this.calculatorModel.getAnswer()+"");
         
     }
-
     public void mod(){
         double firstValue = Double.valueOf(jTextField_fsField.getText());
         double secondValue = Double.valueOf(jTextField_snField.getText());
@@ -138,7 +127,4 @@ public class CalculatorView extends JFrame {
         jTextField_ansField.setText(this.calculatorModel.getAnswer()+"");
         
     }
-
-
-
 }

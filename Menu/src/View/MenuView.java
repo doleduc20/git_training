@@ -1,6 +1,7 @@
 package View;
 
 import javax.swing.JButton;
+import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
@@ -27,6 +28,9 @@ public class MenuView extends JFrame {
     private JMenuItem jMenuItem_view;
     private JMenuItem jMenuItem_select;
     private JMenuItem jMenuItem_terminal;
+    private JCheckBoxMenuItem jCheckBoxMenuItem_toolbar;
+    private JMenu jMenu_show;
+    private JToolBar jToolBar;
     public MenuView(){
         this.init();
     }
@@ -45,7 +49,7 @@ public class MenuView extends JFrame {
     
 
         JMenuBar jMenuBar = new JMenuBar();
-        JToolBar jToolBar = new JToolBar();
+         jToolBar = new JToolBar();
         
         JMenu jMenu_file = new JMenu("File");
          jMenuItem_open = new JMenuItem("Open",KeyEvent.VK_O);
@@ -110,8 +114,12 @@ public class MenuView extends JFrame {
             jPopupMenu.add(jMenu_sete);
          jPopupMenu.add(jMenuItem_view);
          
-         
-        
+// jcheckbox
+         jMenu_show = new JMenu("Show");
+          jCheckBoxMenuItem_toolbar = new JCheckBoxMenuItem("Toolbar"); 
+          jCheckBoxMenuItem_toolbar.addActionListener(menuController);
+          jMenu_show.add(jCheckBoxMenuItem_toolbar);
+        jMenuBar.add(jMenu_show);
          
          jLabel = new JLabel();
          
@@ -119,11 +127,23 @@ public class MenuView extends JFrame {
         this.setJMenuBar(jMenuBar);
         this.add(jPopupMenu);
         this.add(jLabel,BorderLayout.CENTER);
-        this.add(jToolBar,BorderLayout.NORTH);
+        
        
         this.setVisible(true);
     }
     public void setJlabel(String s){
         this.jLabel.setText(s);
+    }
+    public void enableToolbar(){
+        this.add(jToolBar,BorderLayout.NORTH);
+        this.refesh();
+    }
+    public void disableToolbar(){
+        this.remove(jToolBar);
+        this.refesh();
+    }
+    public void refesh(){
+        this.pack();
+        this.setSize(500,600);
     }
 }

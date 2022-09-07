@@ -1,5 +1,6 @@
 package View;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
@@ -12,8 +13,13 @@ import Controller.SignupController;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import java.net.URL;
 
 import Model.SignupModel;
 
@@ -24,6 +30,7 @@ public class SignupView extends JFrame {
     private JButton jButton_login;
     public JCheckBox jCheckBox;
     private JButton jButton_reset;
+    private Component jPanel_north;
 
     public SignupView(){
         this.signupModel = new SignupModel();
@@ -39,6 +46,11 @@ public class SignupView extends JFrame {
         SignupController signupController = new SignupController(this);
         Font font = new Font("Arial",Font.BOLD,25);
 
+        // set icoin
+        URL urlIcoin = SignupView.class.getResource("icoin.png");
+        Image img = Toolkit.getDefaultToolkit().createImage(urlIcoin);
+        this.setIconImage(img);
+
         JPanel jPanel_north = new JPanel();
         jPanel_north.setLayout(new BorderLayout());
         JLabel jLabel_title = new JLabel("Login form");
@@ -52,11 +64,13 @@ public class SignupView extends JFrame {
          jTextField_username = new JTextField();
          jTextField_username.setFont(font);
          jTextField_username.setBackground(Color.BLUE);
+         jTextField_username.setForeground(Color.white);
          jTextField_username.addActionListener(signupController);
         JLabel jLabel_password = new JLabel("Password:");
         jLabel_password.setFont(font);
          jPasswordField = new JPasswordField();
          jPasswordField.setBackground(Color.BLUE);
+         jPasswordField.setForeground(Color.white);
          jPasswordField.addActionListener(signupController);
         jPanel_center.add(jLabel_username);
         jPanel_center.add(jTextField_username);
@@ -69,9 +83,11 @@ public class SignupView extends JFrame {
          jCheckBox = new JCheckBox("Remember me?");
          jCheckBox.setFont(font);
          jButton_login = new JButton("Login");
+         jButton_login.setIcon(new ImageIcon(Toolkit.getDefaultToolkit().createImage(SignupView.class.getResource("login.png"))));
          jButton_login.setFont(font);
          jButton_login.addActionListener(signupController);
          jButton_reset = new JButton("Reset");
+         jButton_reset.setIcon(new ImageIcon(Toolkit.getDefaultToolkit().createImage(SignupView.class.getResource("reset.png"))));
          jButton_reset.setFont(font);
          jButton_reset.addActionListener(signupController);
         jPanel_south.add(jCheckBox,BorderLayout.NORTH);
